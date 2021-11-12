@@ -26,6 +26,6 @@ class RegisterController extends Controller
 
         request()->session()->flash('success', 'Registration successfull!');
 
-        return redirect()->to('/home');
+        return redirect()->to('/');
     }
 }

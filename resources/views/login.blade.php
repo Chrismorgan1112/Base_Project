@@ -32,7 +32,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/loginStyle.css" rel="stylesheet">
 
 </head>
 
@@ -62,24 +62,13 @@
                 @enderror
             </div>
 
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+            <button class="w-100 btn btn-lg btn-danger" type="submit">Login</button>
         </form>
 
-        <button class="w-100 mt-1 btn btn-lg btn-secondary" onclick="location.href = 'home';">Go Back</button>
+        <button class="w-100 mt-1 btn btn-lg btn-secondary" onclick="location.href = '/';">Go Back</button>
         <small class="d-block text-center mt-3"> Not Registered? <a href="register"> Register Now!</a></small>
-        <p class="mt-5 mb-3 text-muted">&copy; November 2021</p>
-
-        {{-- @if($errors->any())
-        <table>
-            <tr>Error while login:</tr>
-            @foreach ($errors->all() as $error)
-            <tr>
-                <li style="color:red">{{ $error }}</li>
-            </tr>
-            @endforeach
-        </table>
-        @endif --}}
     </main>
+    <p class="mt-5 mb-3 text-muted copyright">&copy; November 2021</p>
 </body>
 
 </html>

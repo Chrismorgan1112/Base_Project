@@ -64,10 +64,10 @@
                 @enderror
             </div>
 
-            <button type="submit" class="w-100 btn btn-lg btn-primary register-button">Register !</button>
+            <button type="submit" class="w-100 btn btn-lg btn-danger register-button">Register !</button>
         </form>
 
-        <button onclick="location.href = 'home';" class="w-100 btn btn-lg btn-secondary">Go Back</button>
+        <button onclick="location.href = '/';" class="w-100 btn btn-lg btn-secondary">Go Back</button>
 
         <small class="d-block text-center mt-3"> Already have account? <a href="login"> Login Now!</a></small>
 
@@ -75,13 +75,6 @@
 
     <p class="mb-3 text-muted copyright-bottom">&copy; November 2021</p>
 
-    {{-- @if($errors->any())
-        <table>
-            <tr>Error while registering:</tr>
-            @foreach ($errors->all() as $error)
-                <tr><li style="color:red">{{ $error }}</li></tr>
-            @endforeach
-        </table>
-    @endif --}}
+
 </body>
 </html>

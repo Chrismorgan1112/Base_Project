@@ -16,15 +16,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', function () {
-    return view('welcome');
+    return view('welcome',[
+        "title"=>"home"
+    ]);
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about',[
+        "title"=>"about"
+    ]);
 });
 
 Route::get('/login',  [LoginController::class, "index"]);
